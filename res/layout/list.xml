@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/listbar"
+        layout="@layout/titlebar_back" />
+    <!-- android:listSelector="@drawable/item_selected" -->
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clear"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+   		android:layout_alignParentBottom="true"
+   		android:textColor="#FFFFFF"
+   		android:textSize="18dp"
+   		android:visibility="gone"
+        android:text="Clear" />
+
+    <ListView
+        android:id="@+id/lists"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/listbar"
+        android:layout_above="@id/btn_clear"
+        android:cacheColorHint="@color/android:transparent" >
+    </ListView>
+
+
+</RelativeLayout>

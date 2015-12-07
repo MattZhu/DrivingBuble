@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/select_qtype_top"
+        layout="@layout/titlebar_question" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+    	android:paddingRight="15dp"
+    	android:paddingTop="15dp"
+    	android:paddingBottom="15dp"
+        android:text="@string/questypedesc"
+        android:background="@drawable/question_bg"
+         />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:paddingLeft="15dp"
+    	android:paddingRight="15dp"
+    	android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/kemu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="科目一理论考试" />
+
+        <RadioButton
+            android:id="@+id/kemu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="科目三安全文明" />
+
+        
+    </RadioGroup>
+
+</LinearLayout>

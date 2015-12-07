@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg"
+    >
+
+    <include
+        android:id="@+id/select_city_top"
+        layout="@layout/titlebar_back" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp" 
+    	android:paddingLeft="15dp"
+    	android:paddingRight="15dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/current_city_bg"
+         >
+	
+        <TextView
+            android:id="@+id/currentLocLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentLocationLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:textColor="#333333"
+             />
+        <TextView
+            android:id="@+id/currentLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentLocationLabel"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/currentLocLabel"
+            android:textSize="16dp"
+            android:textColor="#0066CC"
+             />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/cityList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+          >
+    </ListView>
+
+</LinearLayout>

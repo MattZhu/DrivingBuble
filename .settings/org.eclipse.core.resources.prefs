@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//assets/initdb.sql=UTF-8
+encoding//assets/laws/01.txt=UTF-8
+encoding//assets/laws/02.txt=UTF-8
+encoding//assets/laws/03.txt=UTF-8
+encoding//assets/laws/04.txt=UTF-8
+encoding//assets/laws/05.txt=UTF-8
+encoding//assets/province.sql=UTF-8
+encoding//assets/questions.sql=UTF-8
+encoding//assets/sign.sql=UTF-8
+encoding//assets/skills.sql=UTF-8
+encoding//src/com/dt/android/activity/BaseActivity.java=ISO-8859-1

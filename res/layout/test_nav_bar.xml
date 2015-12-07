@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="54dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/nav_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/pre_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/prev" />
+
+        <TextView
+            android:id="@+id/txt_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_pre"
+            android:layout_centerHorizontal="true"
+            android:text="上一题"
+            android:textColor="#0066CC"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="36:33"
+        android:textColor="#666666"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/next_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/next" />
+
+        <TextView
+            android:id="@+id/txt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_next"
+            android:layout_centerHorizontal="true"
+            android:text="下一题"
+            android:textColor="#0066CC"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@id/timerview"
+        android:layout_toRightOf="@id/pre_view" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="23dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/submit" />
+
+        <TextView
+            android:id="@+id/txt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_submit"
+            android:layout_centerHorizontal="true"
+            android:text="交卷"
+            android:textColor="#0066CC"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/not_answered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@id/next_view"
+        android:layout_toRightOf="@id/timerview" >
+
+        <Button
+            android:id="@+id/btn_not_answered"
+            android:layout_width="23dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/not_answered" />
+
+        <TextView
+            android:id="@+id/txt_not_answered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_not_answered"
+            android:layout_centerHorizontal="true"
+            android:text="未做"
+            android:textColor="#0066CC"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

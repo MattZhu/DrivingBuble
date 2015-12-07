@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/practiceTop"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/practiceTop"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp" >
+
+        <GridView
+            android:id="@+id/op_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/item_selected"
+            android:numColumns="3"
+            android:verticalSpacing="30dp" >
+        </GridView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/qtypeBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/view1"
+        android:src="@drawable/kemu1" />
+
+    <ImageView
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/seperator" />
+
+    <LinearLayout
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/view2"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center" >
+
+        <GridView
+            android:id="@+id/op_grid_down"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:horizontalSpacing="15dp"
+            android:listSelector="@drawable/item_selected"
+            android:numColumns="2"
+            android:verticalSpacing="20dp" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

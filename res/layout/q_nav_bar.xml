@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="54dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/nav_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/pre_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/prev" />
+
+        <TextView
+            android:id="@+id/txt_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_pre"
+            android:layout_centerHorizontal="true"
+            android:text="上一题"
+            android:textColor="#0066CC"
+            android:textSize="12dp" />
+    </RelativeLayout>
+       <RelativeLayout
+    android:id="@+id/checkAnswer"
+
+		 android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/pre_view"
+             android:layout_centerVertical="true"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/btn_checkAnswer"
+            android:layout_width="23dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/check_answer" />
+
+        <TextView
+            android:id="@+id/txt_checkAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_checkAnswer"
+            android:layout_centerHorizontal="true"
+            android:text="查看答案"
+            android:textColor="#0066CC"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/next_view" >
+ 		<TextView
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/slash"
+            android:text="1"
+            android:textColor="#0066CC"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="#666666"
+            android:textSize="16dp" />
+
+       
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/slash"
+            android:text="22"
+            android:textColor="#666666"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/next_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/next" />
+
+        <TextView
+            android:id="@+id/txt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_next"
+            android:layout_centerHorizontal="true"
+            android:text="下一题"
+            android:textColor="#0066CC"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

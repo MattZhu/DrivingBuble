@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+ 
+    <com.dt.android.view.MarqueeTextView
+        android:id="@+id/schoolname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/school_price"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="学校名称"
+        android:textSize="16sp" >
+        </com.dt.android.view.MarqueeTextView>
+   <TextView
+        android:id="@+id/school_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="￥2400"
+        android:textColor="#FF0000"
+        android:textSize="16sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/others"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schoolname"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/zizhiwarp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/zizhi_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/zizhi" />
+
+            <TextView
+                android:id="@+id/zizhi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/zizhi_icon"
+                android:layout_toRightOf="@id/zizhi_icon"
+                android:text="资质等级："
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/zizhi_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/zizhi_title"
+                android:layout_toRightOf="@id/zizhi_title"
+                android:text="123456"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+             android:id="@+id/changdiwarp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/changdi_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/changdi" />
+
+            <TextView
+                android:id="@+id/changdi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/changdi_icon"
+                android:layout_toRightOf="@id/changdi_icon"
+                android:text="场地情况："
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/changdi_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/changdi_title"
+                android:layout_toRightOf="@id/changdi_title"
+                android:text="123456"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/tel_phone" />
+
+            <TextView
+                android:id="@+id/phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/phone_icon"
+                android:layout_toRightOf="@id/phone_icon"
+                android:text="电话："
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/phone_title"
+                android:layout_toRightOf="@id/phone_title"
+                android:text="123456"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/address_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/address" />
+
+            <TextView
+                android:id="@+id/address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/address_icon"
+                android:layout_toRightOf="@id/address_icon"
+                android:text="地址："
+                android:textSize="12dp" />
+ 		<Button android:id="@+id/submit_tg1"
+        android:layout_width="wrap_content" 
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/address_title"   
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14dp"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text=""
+        />
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/address_title"
+                android:layout_toRightOf="@id/address_title"
+                android:layout_toLeftOf="@id/submit_tg1"
+                android:text="锦业一路"
+                android:textSize="12dp" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+	<Button android:id="@+id/submit_tg"
+        android:layout_width="wrap_content" 
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14dp"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text="报名"
+            android:layout_alignBottom="@id/others"   
+        />
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/schoolTop"
+        layout="@layout/titlebar_question" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/school_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/school_icon" />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/school_icon"
+            >
+        <include
+        android:id="@+id/schooltitle"
+       
+        layout="@layout/school_item" />
+        </LinearLayout>
+        <!-- 
+        <TextView
+            android:id="@+id/school_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/school_icon"
+            android:text="name"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/school_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/school_icon"
+            android:text="电话："
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/school_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/phone_label"
+            android:layout_toRightOf="@id/phone_label"
+            android:text="1221"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_label"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/school_icon"
+            android:text="地址："
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/school_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/address_label"
+            android:layout_toRightOf="@id/address_label"
+            android:text="11"
+            android:textSize="14dp" />
+             -->
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp" >
+ 						<Button
+                            android:id="@+id/registe_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/clear"
+                            android:text="在线报名" />
+                    <WebView
+                        android:id="@+id/rigiste_notes"
+                        android:layout_below="@id/registe_btn"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp" >
+
+                    <WebView
+                        android:id="@+id/short_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp" >
+
+                    <WebView
+                        android:id="@+id/bus_route"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

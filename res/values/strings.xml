@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">学车通</string>
+    <string name="home">首页</string>
+    <string name="biaozhi">标志</string>
+    <string name="fagui">法规</string>
+    <string name="shangcu">商促</string>
+    <string name="more">更多</string>
+    <string name="practice_seq">顺序练习</string>
+    <string name="practice_cha">章节练习</string>
+    <string name="simulate_test">模拟考试</string>
+    <string name="school_query">驾校查询</string>
+    <string name="regist">团购报名</string>
+    <string name="consulting">学车视频</string>
+    <string name="school_sc">驾校收藏</string>
+    <string name="drivertest_gl">学车攻略</string>
+    <string name="question_sc">问题收藏</string>
+    <string name="error_q">我的错题</string>
+    <string name="autolacate">自动定位</string>
+    <string name="selectcity">选择城市</string>
+    <string name="pre_q">上一题</string>
+    <string name="next_q">下一题</string>
+    <string name="search">搜索</string>
+    <string name="dataupdate">题库更新</string>
+    <string name="appupdate">版本升级</string>
+    <string name="nightmode">夜间模式</string>
+    <string name="newbie">新手引导</string>
+    <string name="suggestion">意见反馈</string>
+    <string name="about">关于我们</string>
+    <string name="check_not_answered">查看未做</string>
+    <string name="check_answered">查看答案</string>
+    <string name="currentLocationLabel">当前位置：</string>
+    <string name="clear_stared">清空我的收藏</string>
+    <string name="clear_errors">清空我的错题</string>
+    <string name="select_car_type">选择车型</string>
+     <string name="select_q_type">科目选择</string>
+	<string name="select_area">区县选择</string>
+	<string name="downloadall">一键下载所有视频</string>
+	<string name="downloadmanager">下载管理</string>
+    <string-array name="car_type">
+        <item>小车</item>
+        <item>客车</item>
+        <item>货车</item>
+    </string-array>
+    <string-array name="car_type_options">
+        <item>小车：C1,C2,C3,C4</item>
+        <item>客车：A1，A3，B1</item>
+        <item>货车：A2，B2</item>
+    </string-array>
+    
+    <string-array name="q_type">
+        <item>科目一</item>
+        <item>科目三安全文明</item>
+    </string-array>
+
+    <string name="test_summray">考试结果</string>
+    <string name="quit_test">退出考试</string>
+
+    <!-- error msg -->
+    <string name="noleft">前面没有了！</string>
+    <string name="noright">后面没有了！</string>
+    <string name="stared">收藏成功！</string>
+    <string name="unstared">取消收藏！</string>
+    <string name="settinglocation">位置服务关闭，进入设置打开？</string>
+    <string name="locatingstr">正在定位，请稍等</string>
+    <string name="locationfailed">暂时无法获得位置，继续等待？</string>
+    <string name="cant_parse_location">暂时无法解析位置，解析地址需要网络支持。请确保网络已打开然后再试。</string>
+    <string name="currentlocation">当前位置：</string>
+    <string name="uselocation">使用</string>
+    <string name="infostr">温馨提示</string>
+    <string name="simulatetestmsg">模拟考试模式不能修改答案，每做一题，系统会自动统计错题数，如果答题错误数量到本次考试不及格标准（100道题错11道）时，系统会自动提交答卷。</string>
+	<string name="simulatetestmsgq3">模拟考试模式不能修改答案，每做一题，系统会自动统计错题数，如果答题错误数量到本次考试不及格标准（50道题错6道）时，系统会自动提交答卷。</string>
+	
+	<string name="about_content">官网：http://www.kaozhao123.com\n\n邮箱：kaozhao123@kaozhao123.com\n</string>
+	<string name="questypedesc">\t2013执行新的驾考规定后，科目三分为两个项目，在道路驾驶技能考试合格后，还需要参加安全文明驾驶常识理论考试（部分地区称为【科目四】）\n\t考试试卷共50道题，题目以案例、图片、动画等形式为主，题型为判断、单选和多选。做好准备点击确定进入考试。</string>
+	<string name="nostaredschool">暂无收藏</string>
+	<string name="loading">数据加载中……</string>
+	<string name="exam_failed">你就是那个刚刚诞生的马路杀手！马路杀手驾到，人神避让！多多练习，预祝早日通过模拟考试！</string>
+	<string name="exam_pass">您已通过了模拟考试，没有什么能够阻挡您拿到驾照了。快点去参加考试吧，打铁要趁热！</string>
+	<string name="exam_pass_title">车神</string>
+	<string name="exit_confirm">确定要退出学车通吗？</string>
+</resources>

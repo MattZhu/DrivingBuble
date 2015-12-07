@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="myTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="more_bg">@drawable/more_bg</item>
+        <item name="divider">@drawable/divider</item>
+        <item name="android:windowBackground">@drawable/initbg</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="myTheme.night" parent="@android:style/Theme.NoTitleBar">
+        <item name="more_bg">@drawable/more_bg_dark</item>
+        <item name="divider">@drawable/divider_dark</item>
+        <item name="android:windowBackground">@drawable/initbg</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>   
+
+</resources>

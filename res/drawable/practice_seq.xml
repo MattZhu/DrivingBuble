@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+      <item android:state_pressed="true"
+          android:drawable="@drawable/practice_cha_s" />
+	<item android:state_selected="true"
+          android:drawable="@drawable/practice_cha_s" />
+     <item android:state_focused="true"
+          android:drawable="@drawable/practice_cha_s" /> <!-- hovered -->
+   	 <item android:drawable="@drawable/practice_cha_n" />
+   	 
+</selector>

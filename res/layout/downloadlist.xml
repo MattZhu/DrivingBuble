@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+       android:background="@drawable/bg"
+       >
+     <include
+        android:id="@+id/listbar"
+        layout="@layout/titlebar_back" />
+     <LinearLayout     android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:gravity="center"
+	    android:layout_margin="5dp"
+	    >
+         <Button
+             android:id="@+id/downloading_btn"
+                  android:layout_height="40dp"
+	    android:layout_width="80dp"
+	    android:background="@drawable/btn_dl_s_l"
+	    android:textColor="@android:color/white"
+	    android:text="下载中"
+	    />
+         <Button    
+             android:id="@+id/downloaded_btn"
+             android:layout_height="40dp"
+	    android:layout_width="80dp"
+	    android:background="@drawable/btn_dl_n_r"
+	    android:textColor="@android:color/white"
+	      android:text="已下载"/>
+     </LinearLayout>
+	<ListView 
+	    android:id="@+id/downloadlist"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_margin="10dp"
+	    ></ListView>
+
+	<TextView
+	    android:id="@+id/nocontent"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="没有正在下载的内容" />
+
+</LinearLayout>

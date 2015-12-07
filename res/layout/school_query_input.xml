@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/queryTop"
+        layout="@layout/titlebar_back" />
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <ImageView 
+            android:id="@+id/query_btn"
+              android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/query_btn"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+            />
+    <EditText 
+        android:id="@+id/queryKey"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/query_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+    </LinearLayout>

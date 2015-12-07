@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+  	android:background="@drawable/bg"
+    >
+
+    <include android:id="@+id/skillTop" layout="@layout/titlebar_back"/>
+<!--     android:background="@drawable/bg"      android:listSelector="@drawable/item_selected" -->
+    <ListView 
+        android:id="@+id/skillList"
+        android:cacheColorHint="@color/android:transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        ></ListView>
+</LinearLayout>
